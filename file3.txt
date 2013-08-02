@@ -1,1 +1,5 @@
 this is file 3
+
+this is the middle of file 3
+
+this is the end of file 3
