@@ -273,10 +273,12 @@ e042f4c development : added file 2
 85afe13 Initial commit
 ```
     
-The history of feature-x is now identical to that of Strategy 2, so when we merge it with `development`, we will have the clean
-coherent history demonstrated there also:
+The history of `feature-x` is now identical to that of Strategy 2, so when we merge it with `development`, we will have the clean coherent history demonstrated there:
 
 ```
+#
+# Clean commit history on development since we cleaned up feature-x with rebase -i
+#
 [development-received-feature-x-merged-but-rebased]$ git log --oneline
 
 e5af985 feature-x : added file 4
@@ -307,13 +309,11 @@ e042f4c development : added file 2
 85afe13 Initial commit
 ```
     
-Many projects (especially those who receive a great deal of contributions), mandate that any contribution to be applied to the 
-`development` (or master) branch be a single commit.  Also if you are on a team following agile practices, branches should
-be at the 'story' size and thus capable of being contained in one commit.  This single commit per contribution, make 
-management of the combining branch (`development`, or master) that much easier.
+Many projects (especially those who receive a great deal of contributions), mandate that any contribution to be applied to the mainline branch branch (i.e. development, master) be a **single commit**.  
 
-Here our `feature-x` contribution is comprised of 3 commits. We can easily change that with *interactive rebasing*.  (note: 
-there is also a git `squash` command to accomplish this, but here we will demonstrate the more versatile `rebase -i`)
+Also if you are on a team following agile practices, branches should be at the 'story' size and thus capable of being contained in one commit.  This ***single commit per contribution***, make management of the mainline branch that much easier.
+
+Here our `feature-x` contribution is comprised of 3 commits. We can easily change that with *interactive rebasing*.  (note: there is also a git `squash` command to accomplish this, but here we will demonstrate the more versatile `rebase -i`)
 
 ```
 # 
