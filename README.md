@@ -445,9 +445,7 @@ I believe strategy 3 represents what most developers evolve to once they've used
 
 Simply stated:
 
-> In or to ensure clean, consise mainline branch (development and/or master) commit history become skilled at *clean up* feature branch history prior to mering back to the the main branch.
-
-Due to the light weight and utility of branches in git, a policy of each branch only being for a very small unit of work mitigates the concerns of 'sharing history' for a given branch.
+> In order to ensure clean, consise mainline branch (development and/or master) commit history become skilled at *cleaning up* feature branch history prior to mering back to the the main branch.
 
 When talking about merging contributions to a mainline branch, I'd be remiss if I did not mention [Github Pull Requests](https://help.github.com/articles/using-pull-requests).  This is an excellent work-flow that allows contributers to 'queue' commits for a mainline branch.  They can be utilized for gating write access to a repository and/or as a vehicle for 'peer reviews' of contribution prior to merging.
 
